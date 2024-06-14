@@ -49,31 +49,31 @@ td {
   text-align: left;
 }
 
-.celda-numero {
+.cell-num {
   margin: var(--item-margin);
   padding: var(--item-padding);
   width: 5px;
 }
 
-.celda-imagen {
+.cell-img {
   margin: var(--item-margin);
   padding: var(--item-padding);
   width: 20px;
 }
 
-.celda-imagen img {
+.cell-img img {
   width: var(--image-width);
   height: auto;
   border-radius: var(--border-radius);
 }
 
-.celda-titulo {
+.cell-song {
   margin: var(--item-margin);
   padding: var(--item-padding);
   width: 49%;
 }
 
-.celda-precio {
+.cell-reproductions {
   margin: var(--item-margin);
   padding: var(--item-padding);
   width: 25%;
@@ -96,62 +96,37 @@ tr:hover {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+  align-items: center;
 }
 
-.item-1,
-.item-6,
-.item-11,
-.item-16,
-.item-21 {
-  display: flex;
+.num {
   margin: var(--item-margin);
   padding: var(--item-padding);
   width: min-content;
 }
 
-.item-2,
-.item-7,
-.item-12,
-.item-17,
-.item-22 {
-  display: flex;
+.img_album{
   margin: var(--item-margin);
   padding: var(--item-padding);
 }
 
-.item-2 img,
-.item-7 img,
-.item-12 img,
-.item-17 img,
-.item-22 img {
+.img_album img {
   width: var(--image-width);
   height: auto;
   border-radius: var(--border-radius);
 }
 
-.item-3,
-.item-8,
-.item-13,
-.item-18,
-.item-23 {
-  display: flex;
+.title_songs {
   margin: var(--item-margin);
   padding: var(--item-padding);
   width: 47%;
 }
 
-.item-4,
-.item-9,
-.item-14,
-.item-19,
-.item-24 {
-  display: flex;
+.reproductions {
   margin: var(--item-margin);
   padding: var(--item-padding);
   width: 24%;
 }
-
-/* ... repeat for other item classes */
 
 .fila:hover {
   background-color: #333;
@@ -170,10 +145,12 @@ tr:hover {
   padding: 10px;
   text-align: center;
 }
-
+.card_img {
+  width: 100%;
+}
 .card img {
-  width: 90%;
-  height: 180px;
+  width: 100%;
+  height: 176.8px;
   object-fit: cover;
   margin-bottom: 15px;
   border-radius: var(--border-radius);
